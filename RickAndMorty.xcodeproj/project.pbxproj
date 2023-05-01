@@ -19,6 +19,9 @@
 		AFA5438929FF42DD003A20CD /* RMEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA5438829FF42DD003A20CD /* RMEpisodeViewController.swift */; };
 		AFA5438B29FF433A003A20CD /* RMCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA5438A29FF433A003A20CD /* RMCharacterViewController.swift */; };
 		AFA5438D29FF4376003A20CD /* RMSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA5438C29FF4376003A20CD /* RMSettingsViewController.swift */; };
+		AFA5439029FF58D4003A20CD /* RMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA5438F29FF58D4003A20CD /* RMService.swift */; };
+		AFA5439229FF58ED003A20CD /* RMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA5439129FF58ED003A20CD /* RMRequest.swift */; };
+		AFA5439429FF5A2A003A20CD /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA5439329FF5A2A003A20CD /* RMEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		AFA5438829FF42DD003A20CD /* RMEpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeViewController.swift; sourceTree = "<group>"; };
 		AFA5438A29FF433A003A20CD /* RMCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterViewController.swift; sourceTree = "<group>"; };
 		AFA5438C29FF4376003A20CD /* RMSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsViewController.swift; sourceTree = "<group>"; };
+		AFA5438F29FF58D4003A20CD /* RMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMService.swift; sourceTree = "<group>"; };
+		AFA5439129FF58ED003A20CD /* RMRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMRequest.swift; sourceTree = "<group>"; };
+		AFA5439329FF5A2A003A20CD /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 			children = (
 				AFA5437C29FF3EF6003A20CD /* Resources */,
 				AFA5437B29FF3EEB003A20CD /* Managers */,
+				AFA5438E29FF5898003A20CD /* APIClient */,
 				AFA5437A29FF3EDD003A20CD /* ViewModels */,
 				AFA5437829FF3EC8003A20CD /* Views */,
 				AFA5437929FF3ED3003A20CD /* Models */,
@@ -83,9 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				AFA5436729FD6441003A20CD /* RMTabBarController.swift */,
+				AFA5438A29FF433A003A20CD /* RMCharacterViewController.swift */,
 				AFA5438629FF4278003A20CD /* RMLocationViewController.swift */,
 				AFA5438829FF42DD003A20CD /* RMEpisodeViewController.swift */,
-				AFA5438A29FF433A003A20CD /* RMCharacterViewController.swift */,
 				AFA5438C29FF4376003A20CD /* RMSettingsViewController.swift */,
 			);
 			path = Core;
@@ -139,6 +146,16 @@
 				AFA5437729FF3EB6003A20CD /* Core */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AFA5438E29FF5898003A20CD /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				AFA5438F29FF58D4003A20CD /* RMService.swift */,
+				AFA5439129FF58ED003A20CD /* RMRequest.swift */,
+				AFA5439329FF5A2A003A20CD /* RMEndpoint.swift */,
+			);
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,8 +235,11 @@
 				AFA5438929FF42DD003A20CD /* RMEpisodeViewController.swift in Sources */,
 				AFA5436429FD6441003A20CD /* AppDelegate.swift in Sources */,
 				AFA5438D29FF4376003A20CD /* RMSettingsViewController.swift in Sources */,
+				AFA5439029FF58D4003A20CD /* RMService.swift in Sources */,
 				AFA5436629FD6441003A20CD /* SceneDelegate.swift in Sources */,
+				AFA5439429FF5A2A003A20CD /* RMEndpoint.swift in Sources */,
 				AFA5437E29FF4005003A20CD /* RMLocation.swift in Sources */,
+				AFA5439229FF58ED003A20CD /* RMRequest.swift in Sources */,
 				AFA5438029FF4024003A20CD /* RMCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
